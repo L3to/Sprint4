@@ -7,13 +7,14 @@
 
 body{
     font-size: 16px;
+    color: #D9CEBAFF;
     font-family: 'Bebas Neue', cursive;
     background: #311d22;
 }
 
 @layer components{
     .cabecalho{
-        @apply  text-black p-10 m-auto;
+        @apply text-rosa-escuro p-10 m-auto;
     }
 
     .cabecalho h1{
