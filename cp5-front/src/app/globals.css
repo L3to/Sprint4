@@ -1,3 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+body{
+    font-size: 16px;
+    font-family: 'Bebas Neue', cursive;
+    background: #311d22;
+}
+
+@layer components{
+    .cabecalho{
+        @apply  text-black p-10 m-auto;
+    }
+
+    .cabecalho h1{
+        @apply text-4xl;
+        
+    }
+
+    .menu li{
+        @apply inline mx-10;
+    }
+
+    .menu a:hover{
+        @apply bg-slate-950 text-white rounded-md p-1;
+    }
+
+    .menu{
+        @apply flex justify-end text-3xl ;
+    }
+}
