@@ -8,7 +8,7 @@ export default function Menu() {
     <nav className="menu">
         <ul>
             <li> <Link href="/">Home</Link> </li>
-            <li> <Link href="/produtos">Produtos</Link> </li>
+            <li> <Link href="/biografia">Biografia</Link> </li>
         </ul>
     </nav>
   )
