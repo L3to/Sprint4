@@ -33,15 +33,15 @@ export default function Home() {
           />
         </div>
         <div className="w-4/5 sm:w-2/5 md:w-2/3 lg:w-1/2 h-1 bg-bege-claro mt-4" />
-        <div className="flex flex-row items-center justify-center mt-4 space-x-4">
-            <Link href="#" className="bg-orange-800 hover:bg-orange-900 text-white py-2 px-4 rounded">
-            WORLDS IN COLLISION
+        <div className="flex flex-row items-center justify-center mt-4 space-x-4 text-xl md:text-2xl lg:text-3xl">
+            <Link href="/worlds" className="bg-orange-800 hover:bg-orange-900 text-white py-2 px-4 rounded">
+            WORLDS IN COLLISION: O LIVRO
             </Link>
             <Link href="/biografia" className="bg-red-800 hover:bg-red-900 text-white py-2 px-4 rounded">
             Saiba mais sobre Velikovsky
             </Link>
-            <Link href="#" className="bg-pink-800 hover:bg-pink-900 text-white py-2 px-4 rounded">
-            Cálculo
+            <Link href="/catastofre" className="bg-pink-800 hover:bg-pink-900 text-white py-2 px-4 rounded">
+            Cálculo da catástrofe
             </Link>
         </div>
       </div>
