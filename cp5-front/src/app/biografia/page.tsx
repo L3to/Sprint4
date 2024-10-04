@@ -1,17 +1,8 @@
-import React from 'react';
-import Image from 'next/image';
-
-export default function VelikovskyPage() {
+export default function Biografia() {
   return (
     <>
       <main>
         <h1>Quem foi Immanuel Velikovsky ?</h1>
-        <Image
-          src="/img/velikovsky.jpg" // Caminho da imagem (certifique-se de que ela esteja na pasta public)
-          alt="Immanuel Velikovsky"
-          width={300} // Largura da imagem
-          height={150} // Altura da imagem
-        />
         <p>
           Immanuel Velikovsky (1895–1979) foi um psiquiatra, autor e teórico das
           catástrofes cósmicas que nasceu em Vitebsk, no Império Russo (atual
@@ -20,7 +11,6 @@ export default function VelikovskyPage() {
           desafiaram as ideias estabelecidas nas ciências da astronomia,
           geologia e história antiga.
         </p>
-
         <h2>Formação e Carreira Inicial</h2>
         <p>
           Velikovsky cresceu em uma família judaica e demonstrou interesse por
@@ -32,7 +22,6 @@ export default function VelikovskyPage() {
           tradução e publicação de textos científicos, o que aprofundou seu
           contato com as ciências e com o mundo intelectual da época.
         </p>
-
         <h2>A Teoria de Catástrofes Cósmicas</h2>
         <p>
           Nos anos 1940, Velikovsky começou a pesquisar sobre eventos históricos
@@ -44,7 +33,6 @@ export default function VelikovskyPage() {
           Vênus e Marte, teriam causado catástrofes globais na Terra em tempos
           relativamente recentes.
         </p>
-
         <h2>Reação da Comunidade Científica</h2>
         <p>
           <strong>Worlds in Collision</strong> provocou uma reação explosiva da
@@ -55,7 +43,6 @@ export default function VelikovskyPage() {
           históricos recentes. Muitos cientistas o acusaram de pseudociência, e
           o livro foi amplamente rejeitado pelas academias de ciência.
         </p>
-
         <h2>Trabalhos Posteriores e Legado</h2>
         <p>
           Após o sucesso de <strong>Worlds in Collision</strong>, Velikovsky
@@ -69,5 +56,5 @@ export default function VelikovskyPage() {
         </p>
       </main>
     </>
-  );
+  )
 }
