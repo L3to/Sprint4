@@ -12,7 +12,8 @@ const config: Config = {
         'bebes': ['Bebas Neue', 'sans-serif'],
       },
       colors: {
-        'rosa-escuro': '#b24775',
+        'rosa-escuro': '#ffe6f1', // Lighter shade of rosa-escuro, almost white
+        'bege-claro': '#f8eee1',
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
