@@ -6,6 +6,12 @@ export default function Catastrofe() {
     <>
       <main>
         <h1>A teoria da Catástrofe Cósmica</h1>
+        <Image 
+        src="/img/collision.jpg" 
+        alt="Dois planetas colidindo" 
+        width={800} 
+        height={500} 
+        />
         <p>
           A teoria da Catástrofe Cósmica de Immanuel Velikovsky, apresentada em sua obra Worlds in Collision (Mundos em Colisão), publicada em 1950, propõe que eventos cataclísmicos de grande escala ocorreram na Terra devido a perturbações no sistema solar causadas por interações violentas entre os planetas. Essa ideia controversa desafiou o conhecimento científico estabelecido, ao sugerir que planetas, como Vênus e Marte, passaram perto da Terra em tempos históricos recentes, provocando destruição global.
         </p>

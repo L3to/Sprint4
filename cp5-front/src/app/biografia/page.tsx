@@ -1,10 +1,17 @@
 import React from "react";
+import Image from 'next/image';
 
 export default function Biografia() {
   return (
     <>
       <main>
         <h1>Quem foi Immanuel Velikovsky ?</h1>
+        <Image 
+        src="/img/velikovsky.jpg" 
+        alt="Immanuel Velikovsky" 
+        width={800} 
+        height={500} 
+        />
         <p>
           Immanuel Velikovsky (1895–1979) foi um psiquiatra, autor e teórico das
           catástrofes cósmicas que nasceu em Vitebsk, no Império Russo (atual
