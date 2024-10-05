@@ -22,31 +22,16 @@ export default function Home() {
           <span className="block mt-2">― Immanuel Velikovsky</span>
         </blockquote>
         <div className="flex flex-row items-center justify-center mt-4 space-x-4 mx-auto">
-  <Image
-    src="/img/velikovsky.jpg"
-    alt="Doutor Velikovsky"
-    width={350}
-    height={350} // Defina a altura e a largura para o mesmo valor
-    priority={true}
-    className="mt-4 rounded-lg shadow-lg object-cover" // Use object-cover para cortar e manter a proporção
-  />
-  <Image
-    src="/img/velikovsky2.jpg"
-    alt="Doutor Velikovsky"
-    width={350}
-    height={350} // Defina a altura e a largura para o mesmo valor
-    priority={true}
-    className="mt-4 rounded-lg shadow-lg object-cover" // Use object-cover para cortar e manter a proporção
-  />
-  <Image
-    src="/img/velikovsky3.jpg"
-    alt="Doutor Velikovsky"
-    width={350}
-    height={350} // Defina a altura e a largura para o mesmo valor
-    priority={true}
-    className="mt-4 rounded-lg shadow-lg object-cover" // Use object-cover para cortar e manter a proporção
-  />
-</div>
+          <Image
+            src="/img/Velikovsky.jpg"
+            alt="Capa do livro Worlds in Collision"
+            layout="responsive"
+            width={350}
+            height={50}
+            priority={true}
+            className="mt-4 rounded-lg shadow-lg"
+          />
+        </div>
         <div className="w-4/5 sm:w-2/5 md:w-2/3 lg:w-1/2 h-1 bg-bege-claro mt-4" />
         <div className="flex flex-row items-center justify-center mt-4 space-x-4 text-xl md:text-2xl lg:text-3xl">
             <Link href="/worlds" className="bg-orange-800 hover:bg-orange-900 text-white py-2 px-4 rounded">
