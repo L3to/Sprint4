@@ -14,14 +14,13 @@ body{
 
 @layer components{
     .cabecalho{
-        @apply text-rosa-escuro p-10 m-auto;
+        @apply text-rosa-escuro pb-10 m-auto;
     }
 
-   
-    .cabecalho h1{
-        @apply text-4xl text-center p-5;
-        
+    .cabecalho img{
+        @apply block mx-auto;
     }
+
 
     .menu li{
         @apply inline mx-10;

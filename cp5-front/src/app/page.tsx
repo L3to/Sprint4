@@ -37,10 +37,10 @@ export default function Home() {
             <Link href="/worlds" className="bg-orange-800 hover:bg-orange-900 text-white py-2 px-4 rounded">
             WORLDS IN COLLISION: O LIVRO
             </Link>
-            <Link href="/biografia" className="bg-red-800 hover:bg-red-900 text-white py-2 px-4 rounded">
+            <Link href="/biografia" className="bg-red-800 hover:bg-red-900 text-white py-2 px-3 rounded">
             Saiba mais sobre Velikovsky
             </Link>
-            <Link href="/catastofre" className="bg-pink-800 hover:bg-pink-900 text-white py-2 px-4 rounded">
+            <Link href="/catastofre" className="bg-pink-800 hover:bg-pink-900 text-white py-2 px-3 rounded">
             Cálculo da catástrofe
             </Link>
         </div>
