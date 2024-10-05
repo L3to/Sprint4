@@ -14,7 +14,7 @@ body{
 
 @layer components{
     .cabecalho{
-        @apply text-rosa-escuro pb-10 m-auto;
+        @apply text-rosa-escuro pb-0 m-auto;
     }
 
     .cabecalho img{
@@ -23,7 +23,7 @@ body{
 
 
     .menu li{
-        @apply inline mx-10;
+        @apply inline mx-2;
     }
 
     .menu a:hover{
@@ -31,6 +31,6 @@ body{
     }
 
     .menu{
-        @apply flex justify-center text-3xl;
+        @apply flex justify-center text-3xl text-center;
     }
 }

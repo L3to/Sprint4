@@ -9,8 +9,8 @@ export default function Menu() {
         <ul>
             <li> <Link href="/">Home</Link> </li>
             <li> <Link href="/biografia">Biografia</Link> </li>
-            <li> <Link href="/catastrofe">Catástrofes cósmicas</Link> </li>
-            <li> <Link href="/worlds">WORLDS IN COLLISION</Link> </li>
+            <li> <Link href="/catastrofe">Teoria</Link> </li>
+            <li> <Link href="/worlds">Obra</Link> </li>
         </ul>
     </nav>
   )
