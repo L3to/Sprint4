@@ -29,7 +29,7 @@ export default function Home() {
             width={350}
             height={50}
             priority={true}
-            className="mt-4"
+            className="mt-4 rounded-lg shadow-lg"
           />
         </div>
         <div className="w-4/5 sm:w-2/5 md:w-2/3 lg:w-1/2 h-1 bg-bege-claro mt-4" />
