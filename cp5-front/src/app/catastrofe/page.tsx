@@ -1,4 +1,4 @@
-import React from 'react';
+import Image from 'next/image';
 import Imagemdanasa from '../imagemdanasa/page';
 
 export default function Catastrofe() {
@@ -9,7 +9,6 @@ export default function Catastrofe() {
       <p className="p-4 text-lg font-afacada">
         A teoria da Catástrofe Cósmica de Immanuel Velikovsky, apresentada em sua obra Worlds in Collision (Mundos em Colisão), publicada em 1950, propõe que eventos cataclísmicos de grande escala ocorreram na Terra devido a perturbações no sistema solar causadas por interações violentas entre os planetas. Essa ideia controversa desafiou o conhecimento científico estabelecido, ao sugerir que planetas, como Vênus e Marte, passaram perto da Terra em tempos históricos recentes, provocando destruição global.
       </p>
-
       <div className="border-2 border-bege-claro p-4 rounded-md">
         <h2 className="text-2xl font-semibold mb-2">Contexto da Teoria</h2>
         <p className="mb-4 font-afacada">
@@ -18,7 +17,9 @@ export default function Catastrofe() {
         <p className="mb-4 font-afacada">
           Em Worlds in Collision, Velikovsky sugere que Vênus, originalmente um corpo celeste errante, foi ejetado do planeta Júpiter como um cometa, e que suas interações com a Terra provocaram uma série de catástrofes. Ele alegava que esse novo corpo celeste (Vênus) passou perigosamente perto da Terra, mudando suas órbitas e provocando catástrofes globais. Posteriormente, Vênus teria estabilizado sua órbita atual como o segundo planeta do sistema solar.
         </p>
-
+        <div className="flex justify-center mb-4">
+        <Image src="/img/calculo.jpg" alt="Imagem de Immanuel Velikovsky" width={400} height={400} className="rounded-md mb-4" />
+        </div>
         <h2 className="text-2xl font-semibold mb-2">Principais Alegações de Velikovsky</h2>
         <p className="mb-4 font-afacada">
           Velikovsky usou mitos, textos bíblicos e lendas antigas como evidências para suas afirmações. Alguns dos principais eventos que ele propôs incluem:
