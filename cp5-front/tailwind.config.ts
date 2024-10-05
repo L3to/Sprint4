@@ -12,7 +12,10 @@ const config: Config = {
         'bebes': ['Bebas Neue', 'sans-serif'],
       },
       colors: {
-        'rosa-escuro': '#b24775',
+        'rosa-escuro': '#b34775',
+        'rosa-claro': '#ffe6f1', 
+        'bege-claro': '#f8eee1',
+        'laranja': '#B34753', 
         background: "var(--background)",
         foreground: "var(--foreground)",
       },

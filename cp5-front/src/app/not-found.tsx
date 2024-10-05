@@ -2,13 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function NotFound() {
-
   return (
-    <div>
-      <h1>Oh...</h1>
-      <p>Parece que o conteúdo que você está tentando acessar não está disponível!</p>
-      <Image src="/img/capalivroimagem404" alt="Capa do livro Worlds in Collision" width={50} height={50} priority={true} />
-      <Link href={"/"}>Voltar á página inicial</Link>
+    <div className="flex flex-col md:flex-row items-center justify-center text-center md:text-left min-h-screen p-4">
+      <div className="w-160 h-160 md:w-160 md:h-160 mb-8 md:mb-0 md:mr-8">
+        <Image src="/img/source.gif" alt="Saturno destruído" layout="responsive" width={200} height={200} priority={true} />
+      </div>
+      <div>
+        <h1 className="text-4xl md:text-8xl font-bold mb-4">Oh...</h1>
+        <p className="text-xl md:text-4xl mb-4">Parece que o conteúdo que você está tentando acessar não está disponível!</p>
+        <Link href="/">
+          <p className="px-4 py-2 bg-red-700 text-white text-xl md:text-2xl rounded hover:bg-red-900 transition">Voltar á página inicial</p>
+        </Link>
+      </div>
     </div>
-  )
-}   
+  );
+}

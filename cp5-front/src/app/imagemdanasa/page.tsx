@@ -3,42 +3,36 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { NASAImage } from '../../types';
 
-export default function Imagemdanasa() {
+export default function Imagemdanasa({data}: {data: string}) {
     const [imagem, setImagem] = useState<NASAImage | null>(null);
 
 
-    const gerarDataAleatoria = () => {
-        const comeco = new Date(2010, 0, 1);
-        const fim = new Date();
-        const data = new Date(comeco.getTime() + Math.random() * (fim.getTime() - comeco.getTime()));
-        return data.toISOString().split('T')[0];
-    };
 
     useEffect(() => {
         const consumoApi = async () => {
-            const dataRandomica = gerarDataAleatoria();
-            const response = await fetch(`http://localhost:3000/api/nasa/${dataRandomica}`);
+            const response = await fetch(`http://localhost:3000/api/nasa/${data}`);
             const dados = await response.json();
             setImagem(dados);
         };
         consumoApi();
-    }, []);
+    }, [data]);
 
     if (!imagem) {
-        return <div>Loading...</div>;
+        return null;
     }
 
     return (
-        <div>
-            <Image
-                id="pic"
-                src={imagem.hdurl}
-                alt={imagem.title}
-                layout="responsive"
-                width={500}
-                height={300}
-                priority
-            />
-        </div>
+        <div style={{ display: 'flex', justifyContent: 'center', maxHeight: '80vh', overflow: 'hidden' }}>
+        <Image 
+          id="pic"
+          src={imagem.hdurl}
+          alt={imagem.title}
+          layout="responsive"
+          width={500}
+          height={300}
+          priority
+          className="object-cover object-center brightness-50" 
+        />
+      </div>
     );
 }

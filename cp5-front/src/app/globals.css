@@ -17,8 +17,9 @@ body{
         @apply text-rosa-escuro p-10 m-auto;
     }
 
+   
     .cabecalho h1{
-        @apply text-4xl;
+        @apply text-4xl text-center p-5;
         
     }
 
@@ -31,6 +32,6 @@ body{
     }
 
     .menu{
-        @apply flex justify-end text-3xl ;
+        @apply flex justify-center text-3xl;
     }
 }

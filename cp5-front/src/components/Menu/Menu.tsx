@@ -10,8 +10,7 @@ export default function Menu() {
             <li> <Link href="/">Home</Link> </li>
             <li> <Link href="/biografia">Biografia</Link> </li>
             <li> <Link href="/catastrofe">Catástrofes cósmicas</Link> </li>
-            <li> <Link href="/venus">Intervenção de Vênus</Link> </li>
-            <li> <Link href="/cronologia">Cronologias históricas</Link> </li>
+            <li> <Link href="/worlds">WORLDS IN COLLISION</Link> </li>
         </ul>
     </nav>
   )
