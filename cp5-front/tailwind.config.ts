@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         'bebes': ['Bebas Neue', 'sans-serif'],
+        'afacada': ['Afacad Flux'],
       },
       colors: {
         'rosa-escuro': '#b34775',
@@ -24,3 +25,4 @@ const config: Config = {
   plugins: [],
 };
 export default config;
+

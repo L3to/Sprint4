@@ -16,7 +16,7 @@ export default function Biografia() {
         ></iframe>
       </div>
         <div className="p-4">
-          <p className="text-lg">
+          <p className="text-lg font-afacada">
             Immanuel Velikovsky (1895–1979) foi um psiquiatra, autor e teórico das
             catástrofes cósmicas que nasceu em Vitebsk, no Império Russo (atual
             Bielorrússia). Ele é mais conhecido por seus trabalhos controversos,
@@ -27,8 +27,8 @@ export default function Biografia() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="p-4 border border-bege-claro rounded-lg">
-          <h2 className="text-3xl font-semibold mb-4">Formação e Carreira Inicial</h2>
-          <p className="text-lg">
+          <h2 className="font-arial text-3xl font-semibold mb-4">Formação e Carreira Inicial</h2>
+            <p className="text-lg font-afacada">
             Velikovsky cresceu em uma família judaica e demonstrou interesse por
             várias áreas do conhecimento desde jovem. Ele estudou medicina em
             universidades de Edimburgo, Moscou e Montpellier, formando-se em
@@ -37,11 +37,11 @@ export default function Biografia() {
             com discípulos de Sigmund Freud. Velikovsky também se envolveu na
             tradução e publicação de textos científicos, o que aprofundou seu
             contato com as ciências e com o mundo intelectual da época.
-          </p>
+            </p>
         </div>
         <div className="p-4 border border-bege-claro rounded-lg">
           <h2 className="text-3xl font-semibold mb-4">A Teoria de Catástrofes Cósmicas</h2>
-          <p className="text-lg">
+          <p className="text-lg font-afacada">
             Nos anos 1940, Velikovsky começou a pesquisar sobre eventos históricos
             descritos em textos religiosos e mitológicos de civilizações antigas.
             Ele acreditava que muitos desses relatos, como os eventos narrados no{' '}
@@ -54,7 +54,7 @@ export default function Biografia() {
         </div>
         <div className="p-4 border border-bege-claro rounded-lg">
           <h2 className="text-3xl font-semibold mb-4">Reação da Comunidade Científica</h2>
-          <p className="text-lg">
+          <p className="text-lg font-afacada">
             <strong>Worlds in Collision</strong> provocou uma reação explosiva da
             comunidade científica, especialmente de astrônomos e físicos. As ideias
             de Velikovsky desafiavam diretamente as leis da mecânica celeste e da
@@ -66,7 +66,7 @@ export default function Biografia() {
         </div>
         <div className="p-4 border border-bege-claro rounded-lg">
           <h2 className="text-3xl font-semibold mb-4">Trabalhos Posteriores e Legado</h2>
-          <p className="text-lg">
+          <p className="text-lg font-afacada">
             Após o sucesso de <strong>Worlds in Collision</strong>, Velikovsky
             publicou outros livros, como <strong>Ages in Chaos</strong> (1952) e{' '}
             <strong>Earth in Upheaval</strong> (1955), nos quais continuou a
