@@ -12,10 +12,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="pt-br">
       <body>
-        {pathname !== "/" && <Cabecalho />}
+        {(pathname === "/biografia" || pathname === "/catastrofe" || pathname === "/worlds")   && <Cabecalho />}
         {children}
-        <Rodape />
+        {(pathname === "/biografia" || pathname === "/catastrofe" || pathname === "/worlds" || pathname === "/") && <Rodape />}
       </body>
     </html>
   );
 }
+

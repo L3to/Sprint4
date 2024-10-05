@@ -1,17 +1,11 @@
 import React from 'react';
-import Image from 'next/image';
+import Imagemdanasa from '../imagemdanasa/page';
 
 export default function Catastrofe() {
   return (
-    <>
-      <main>
+    <div>
         <h1>A teoria da Catástrofe Cósmica</h1>
-        <Image 
-        src="/img/collision.jpg" 
-        alt="Dois planetas colidindo" 
-        width={800} 
-        height={500} 
-        />
+        <Imagemdanasa data="2021-02-18" />
         <p>
           A teoria da Catástrofe Cósmica de Immanuel Velikovsky, apresentada em sua obra Worlds in Collision (Mundos em Colisão), publicada em 1950, propõe que eventos cataclísmicos de grande escala ocorreram na Terra devido a perturbações no sistema solar causadas por interações violentas entre os planetas. Essa ideia controversa desafiou o conhecimento científico estabelecido, ao sugerir que planetas, como Vênus e Marte, passaram perto da Terra em tempos históricos recentes, provocando destruição global.
         </p>
@@ -31,7 +25,7 @@ export default function Catastrofe() {
         <ul>
           <li><strong>Ejeção de Vênus de Júpiter:</strong> Velikovsky afirmou que Vênus foi expulso de Júpiter como um cometa e que, por um tempo, teve uma trajetória elíptica que a trouxe perto da Terra. Essa passagem próxima teria causado grandes catástrofes na Terra, incluindo inundações, terremotos e alterações na crosta terrestre.</li>
           <li><strong>Pragas do Egito:</strong> Velikovsky correlacionou as pragas bíblicas do Egito, mencionadas no livro de Êxodo, com os efeitos da passagem de Vênus perto da Terra. Ele sugeriu que as pragas, como escuridão, chuva de fogo e gafanhotos, foram causadas por detritos cósmicos, gases e cinzas levantados pela interação entre a Terra e Vênus.</li>
-          <li><strong>Alterações no movimento da Terra:</strong> Uma das alegações mais dramáticas de Velikovsky foi que a Terra experimentou uma alteração no seu eixo de rotação ou até mesmo uma parada temporária, como descrito na passagem bíblica de Josué, onde o "Sol parou no céu". Ele interpretou esse relato como uma prova de que a Terra sofreu um abalo gravitacional durante a interação com Vênus.</li>
+          <li><strong>Alterações no movimento da Terra:</strong> Uma das alegações mais dramáticas de Velikovsky foi que a Terra experimentou uma alteração no seu eixo de rotação ou até mesmo uma parada temporária, como descrito na passagem bíblica de Josué, onde o &quot;Sol parou no céu&quot;. Ele interpretou esse relato como uma prova de que a Terra sofreu um abalo gravitacional durante a interação com Vênus.</li>
           <li><strong>Mitos de várias culturas:</strong> Velikovsky argumentou que mitos e lendas em culturas de todo o mundo, como os relatos de inundações, a queda de fogo do céu e terremotos, não eram histórias inventadas, mas registros precisos de catástrofes globais causadas por perturbações cósmicas.</li>
           <li><strong>Passagem de Marte:</strong> Velikovsky também sugeriu que, após as interações entre Vênus e a Terra, Marte teria passado perto do nosso planeta, causando outro conjunto de catástrofes.</li>
         </ul>
@@ -51,7 +45,6 @@ export default function Catastrofe() {
         <p>
           Apesar da rejeição científica, as ideias de Velikovsky ganharam popularidade entre o público em geral. A narrativa de catástrofes globais e eventos cósmicos dramáticos ressoou com muitas pessoas, especialmente aquelas interessadas em teorias alternativas e esotéricas.
         </p>
-      </main>
-    </>
+    </div>
   );
 }

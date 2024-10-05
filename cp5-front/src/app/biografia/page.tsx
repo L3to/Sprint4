@@ -1,20 +1,21 @@
 import React from "react";
-import Image from 'next/image';
 
 export default function Biografia() {
   return (
     <div className="p-8">
       <h1 className="text-4xl font-bold mb-6 text-center">Quem foi Immanuel Velikovsky ?</h1>
       <div className="mb-6 flex justify-center">
-        <Image 
-          src="/img/velikovsky.jpg" 
-          alt="Immanuel Velikovsky" 
-          width={800} 
-          height={500} 
-          className="rounded-lg shadow-lg"
-        />
+        <iframe 
+          width="800" 
+          height="500" 
+          src="https://www.youtube.com/embed/3WVxYjx9dRg" 
+          title="YouTube video player" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowFullScreen
+          className="rounded-lg shadow-lg w-full"
+        ></iframe>
       </div>
-        <div className="p-4 rounded-lg">
+        <div className="p-4">
           <p className="text-lg">
             Immanuel Velikovsky (1895–1979) foi um psiquiatra, autor e teórico das
             catástrofes cósmicas que nasceu em Vitebsk, no Império Russo (atual
@@ -25,7 +26,7 @@ export default function Biografia() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="p-4 border border-gray-300 rounded-lg">
+        <div className="p-4 border border-bege-claro rounded-lg">
           <h2 className="text-3xl font-semibold mb-4">Formação e Carreira Inicial</h2>
           <p className="text-lg">
             Velikovsky cresceu em uma família judaica e demonstrou interesse por
@@ -38,7 +39,7 @@ export default function Biografia() {
             contato com as ciências e com o mundo intelectual da época.
           </p>
         </div>
-        <div className="p-4 border border-gray-300 rounded-lg">
+        <div className="p-4 border border-bege-claro rounded-lg">
           <h2 className="text-3xl font-semibold mb-4">A Teoria de Catástrofes Cósmicas</h2>
           <p className="text-lg">
             Nos anos 1940, Velikovsky começou a pesquisar sobre eventos históricos
@@ -51,7 +52,7 @@ export default function Biografia() {
             relativamente recentes.
           </p>
         </div>
-        <div className="p-4 border border-gray-300 rounded-lg">
+        <div className="p-4 border border-bege-claro rounded-lg">
           <h2 className="text-3xl font-semibold mb-4">Reação da Comunidade Científica</h2>
           <p className="text-lg">
             <strong>Worlds in Collision</strong> provocou uma reação explosiva da
@@ -63,7 +64,7 @@ export default function Biografia() {
             o livro foi amplamente rejeitado pelas academias de ciência.
           </p>
         </div>
-        <div className="p-4 border border-gray-300 rounded-lg">
+        <div className="p-4 border border-bege-claro rounded-lg">
           <h2 className="text-3xl font-semibold mb-4">Trabalhos Posteriores e Legado</h2>
           <p className="text-lg">
             Após o sucesso de <strong>Worlds in Collision</strong>, Velikovsky
