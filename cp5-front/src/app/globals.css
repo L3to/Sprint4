@@ -27,7 +27,7 @@ body{
     }
 
     .menu a:hover{
-        @apply bg-slate-950 text-white rounded-md p-1;
+        @apply text-rosa-claro;
     }
 
     .menu{

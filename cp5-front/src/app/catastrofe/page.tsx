@@ -3,13 +3,14 @@ import Imagemdanasa from '../imagemdanasa/page';
 
 export default function Catastrofe() {
   return (
-    <div className="p-6">
-      <h1 className="text-7xl font-bold mb-4 text-center">A teoria da Catástrofe Cósmica</h1>
-      <Imagemdanasa data="2021-02-18" />
+    <div>
+      <h1 className="text-7xl font-bold mb-4 text-center p-6">A teoria da Catástrofe Cósmica</h1>
+      <Imagemdanasa data="2021-02-18"/>
+      <div className="px-6 pb-6">
       <p className="p-4 text-lg font-afacada font-semibold">
         A teoria da Catástrofe Cósmica de Immanuel Velikovsky, apresentada em sua obra Worlds in Collision (Mundos em Colisão), publicada em 1950, propõe que eventos cataclísmicos de grande escala ocorreram na Terra devido a perturbações no sistema solar causadas por interações violentas entre os planetas. Essa ideia controversa desafiou o conhecimento científico estabelecido, ao sugerir que planetas, como Vênus e Marte, passaram perto da Terra em tempos históricos recentes, provocando destruição global.
       </p>
-      <div className="border-2 border-bege-claro p-4 rounded-md">
+      <div className="border-4 border-bege-claro p-4 rounded-md">
         <h2 className="text-2xl font-semibold mb-2">Contexto da Teoria</h2>
         <p className="mb-4 font-afacada">
           Velikovsky era um psiquiatra de origem russa com interesse em história e mitologia, e sua teoria surgiu após estudar textos antigos de diversas culturas ao redor do mundo. Ele percebeu semelhanças notáveis em mitos e lendas de civilizações antigas que relatavam catástrofes naturais, como inundações, terremotos e alterações no céu. Para Velikovsky, esses relatos não eram apenas mitos ou exageros, mas descrições precisas de eventos cósmicos reais.
@@ -48,6 +49,7 @@ export default function Catastrofe() {
         <p className="mb-4 font-afacada">
           Apesar da rejeição científica, as ideias de Velikovsky ganharam popularidade entre o público em geral. A narrativa de catástrofes globais e eventos cósmicos dramáticos ressoou com muitas pessoas, especialmente aquelas interessadas em teorias alternativas e esotéricas.
         </p>
+      </div>
       </div>
     </div>
   );
