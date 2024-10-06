@@ -45,7 +45,7 @@ export default function Worlds() {
             </div>
         
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="p-4 border border-bege-claro rounded-lg">
         <h2 className="text-2xl font-semibold mb-2">Rejeição pela Comunidade Científica:</h2>
             <p className="text-lg font-afacada">
@@ -106,11 +106,23 @@ export default function Worlds() {
         <p className="p-4 text-lg font-afacada text-center">
         "Worlds in Collision" continua a ser uma obra debatida e analisada tanto no campo da ciência quanto na filosofia da ciência. Embora suas
         teorias sejam amplamente desacreditadas, o livro ainda é mencionado em discussões sobre a interseção entre ciência, mitologia e a busca humana por
-        compreensão diante do desconhecido.
+        compreensão diante do desconhecido.<br /><br />
     </p>
 
-        
-        </div>
+
+    <div className="p-4 border border-bege-claro rounded-lg">
+    <h2 className="text-lg font-semibold mb-2" style={{ color: "#E7A48C" }}>
+    Site confiável para compra do livro:
+    </h2>
+    <p className="text-lg">
+    <a href="https://www.amazon.com.br/Worlds-Collision-Immanuel-Velikovsky/dp/1906833117" target="_blank" rel="noopener noreferrer">
+    https://www.amazon.com.br/Worlds-Collision-Immanuel-Velikovsky/dp/1906833117
+    </a>
+    </p>
+    </div>
+
+
+    </div>
         
     )
 

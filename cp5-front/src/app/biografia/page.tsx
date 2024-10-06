@@ -65,7 +65,7 @@ export default function Biografia() {
           </p>
         </div>
         <div className="p-4 border border-bege-claro rounded-lg">
-          <h2 className="text-2xl font-semibold mb-2">Trabalhos Posteriores e Legado</h2>
+          <h2 className="text-3xl font-semibold mb-2">Trabalhos Posteriores e Legado</h2>
           <p className="text-lg font-afacada">
             Após o sucesso de <strong>Worlds in Collision</strong>, Velikovsky
             publicou outros livros, como <strong>Ages in Chaos</strong> (1952) e{' '}
