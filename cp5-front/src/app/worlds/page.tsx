@@ -24,7 +24,7 @@ export default function Worlds() {
 
         
 
-        <div className="border-2 border-bege-claro p-4 rounded-md">
+        <div className="border-4 border-bege-claro p-4 rounded-md">
             <h2 className="text-2xl font-semibold mb-2">Principais Temas e Teorias</h2>
             <ul className="list-disc list-inside mb-4 font-afacada">
 
@@ -45,7 +45,7 @@ export default function Worlds() {
             </div>
         
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="p-4 border border-bege-claro rounded-lg">
         <h2 className="text-2xl font-semibold mb-2">Rejeição pela Comunidade Científica:</h2>
             <p className="text-lg font-afacada">
