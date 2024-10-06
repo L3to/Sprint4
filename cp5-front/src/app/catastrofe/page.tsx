@@ -6,7 +6,7 @@ export default function Catastrofe() {
     <div className="p-6">
       <h1 className="text-7xl font-bold mb-4 text-center">A teoria da Catástrofe Cósmica</h1>
       <Imagemdanasa data="2021-02-18" />
-      <p className="p-4 text-lg font-afacada">
+      <p className="p-4 text-lg font-afacada font-semibold">
         A teoria da Catástrofe Cósmica de Immanuel Velikovsky, apresentada em sua obra Worlds in Collision (Mundos em Colisão), publicada em 1950, propõe que eventos cataclísmicos de grande escala ocorreram na Terra devido a perturbações no sistema solar causadas por interações violentas entre os planetas. Essa ideia controversa desafiou o conhecimento científico estabelecido, ao sugerir que planetas, como Vênus e Marte, passaram perto da Terra em tempos históricos recentes, provocando destruição global.
       </p>
       <div className="border-2 border-bege-claro p-4 rounded-md">
