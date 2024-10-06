@@ -27,7 +27,7 @@ export default function Biografia() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="p-4 border border-bege-claro rounded-lg">
-          <h2 className="font-arial text-3xl font-semibold mb-4">Formação e Carreira Inicial</h2>
+          <h2 className="text-2xl font-semibold mb-2">Formação e Carreira Inicial</h2>
             <p className="text-lg font-afacada">
             Velikovsky cresceu em uma família judaica e demonstrou interesse por
             várias áreas do conhecimento desde jovem. Ele estudou medicina em
@@ -40,7 +40,7 @@ export default function Biografia() {
             </p>
         </div>
         <div className="p-4 border border-bege-claro rounded-lg">
-          <h2 className="text-3xl font-semibold mb-4">A Teoria de Catástrofes Cósmicas</h2>
+          <h2 className="text-2xl font-semibold mb-2">A Teoria de Catástrofes Cósmicas</h2>
           <p className="text-lg font-afacada">
             Nos anos 1940, Velikovsky começou a pesquisar sobre eventos históricos
             descritos em textos religiosos e mitológicos de civilizações antigas.
@@ -53,7 +53,7 @@ export default function Biografia() {
           </p>
         </div>
         <div className="p-4 border border-bege-claro rounded-lg">
-          <h2 className="text-3xl font-semibold mb-4">Reação da Comunidade Científica</h2>
+          <h2 className="text-2xl font-semibold mb-2">Reação da Comunidade Científica</h2>
           <p className="text-lg font-afacada">
             <strong>Worlds in Collision</strong> provocou uma reação explosiva da
             comunidade científica, especialmente de astrônomos e físicos. As ideias
@@ -65,7 +65,7 @@ export default function Biografia() {
           </p>
         </div>
         <div className="p-4 border border-bege-claro rounded-lg">
-          <h2 className="text-3xl font-semibold mb-4">Trabalhos Posteriores e Legado</h2>
+          <h2 className="text-2xl font-semibold mb-2">Trabalhos Posteriores e Legado</h2>
           <p className="text-lg font-afacada">
             Após o sucesso de <strong>Worlds in Collision</strong>, Velikovsky
             publicou outros livros, como <strong>Ages in Chaos</strong> (1952) e{' '}
