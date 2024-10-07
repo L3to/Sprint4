@@ -96,7 +96,7 @@ export default function Worlds() {
         <div className="flex justify-center mb-4">
 
         <Image src="/img/collisionplanet.png" 
-        alt="Capa do livro Worlds in Collision" 
+        alt="Planetas Colidindo - Ilustração" 
         width={400}
         height={400}
         className="mb-4 rounded-md" />

@@ -22,17 +22,17 @@ export default function Imagemdanasa({data}: {data: string}) {
     }
 
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', maxHeight: '80vh', overflow: 'hidden' }}>
-        <Image 
-          id="pic"
-          src={imagem.hdurl}
-          alt={imagem.title}
-          layout="responsive"
-          width={500}
-          height={300}
-          priority
-          className="object-cover object-center brightness-50" 
-        />
-      </div>
-    );
-}
+        <div className="flex justify-center max-h-[80vh] overflow-hidden">
+          <Image
+            id="pic"
+            src={imagem.hdurl}
+            alt={imagem.title}
+            layout="responsive"
+            width={500}
+            height={300}
+            priority
+            className="object-cover object-center brightness-50"
+          />
+        </div>
+      );
+    }      

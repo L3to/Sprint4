@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div style={{ position: "relative", display: "inline-block" }}>
-      <div style={{ position: "relative" }}>
+    <div className="relative inline-block">
+      <div className="relative">
         <Imagemdanasa data="2024-08-28" />
         <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-rosa-claro text-center text-5xl md:text-8xl lg:text-9xl font-bold">
           WORLDS IN <br /> COLLISION
@@ -24,7 +24,7 @@ export default function Home() {
         <div className="flex flex-row items-center justify-center mt-4 space-x-4 mx-auto">
           <Image
             src="/img/Velikovsky.jpg"
-            alt="Capa do livro Worlds in Collision"
+            alt="Imagem de Immanuel Velikovsky"
             layout="responsive"
             width={350}
             height={50}

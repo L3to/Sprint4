@@ -19,8 +19,8 @@ export default function Catastrofe() {
           Em Worlds in Collision, Velikovsky sugere que Vênus, originalmente um corpo celeste errante, foi ejetado do planeta Júpiter como um cometa, e que suas interações com a Terra provocaram uma série de catástrofes. Ele alegava que esse novo corpo celeste (Vênus) passou perigosamente perto da Terra, mudando suas órbitas e provocando catástrofes globais. Posteriormente, Vênus teria estabilizado sua órbita atual como o segundo planeta do sistema solar.
         </p>
         <div className="flex flex-wrap justify-center mb-4 gap-4">
-          <Image src="/img/calculo2.jpg" alt="Imagem de Immanuel Velikovsky" width={400} height={400} className="mb-4 rounded-md" />
-          <Image src="/img/calculo.jpg" alt="Imagem de Immanuel Velikovsky" width={400} height={400} className="mb-4 rounded-md" />
+          <Image src="/img/calculo2.jpg" alt="Imagem dos Cálculos" width={400} height={400} className="mb-4 rounded-md" />
+          <Image src="/img/calculo.jpg" alt="Imagem dos Cálculos" width={400} height={400} className="mb-4 rounded-md" />
         </div>
         <h2 className="text-2xl font-semibold mb-2">Principais Alegações de Velikovsky</h2>
         <p className="mb-4 font-afacada">

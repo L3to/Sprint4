@@ -5,32 +5,30 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    font-size: 16px;
-    color: #D9CEBAFF;
-    font-family: 'Bebas Neue', cursive;
-    background: #311d22;
+@layer base {
+    body {
+        @apply text-[16px] text-[#D9CEBAFF] font-bebes bg-[#311d22];
+    }
 }
 
-@layer components{
-    .cabecalho{
+@layer components {
+    .cabecalho {
         @apply text-rosa-escuro pb-0 m-auto;
     }
 
-    .cabecalho img{
+    .cabecalho img {
         @apply block mx-auto;
     }
 
-
-    .menu li{
+    .menu li {
         @apply inline mx-2;
     }
 
-    .menu a:hover{
+    .menu a:hover {
         @apply text-rosa-claro;
     }
 
-    .menu{
+    .menu {
         @apply flex justify-center text-3xl text-center;
     }
 }
