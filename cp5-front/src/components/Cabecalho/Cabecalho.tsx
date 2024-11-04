@@ -1,10 +1,30 @@
 import Menu from "../Menu/Menu";
 import Image from "next/image";
+import Logo from "../../assets/img/porto-logo.png";
+import { BiPlusCircle } from "react-icons/bi";
+import Bina from "../../assets/img/BINA.png";
+import Link from "next/link";
+
 export default function Cabecalho() {
   return (
     <header className="cabecalho">
-     <Image src="/img/planet.png" alt="Saturno destruído" width={250} height={250} priority={true} />
+      <div className="flex justify-between">
+        <div>
+          <Image
+            src={Logo}
+            alt="Logo"
+            width={250}
+            height={250}
+            className="Logo"
+          />
+          <BiPlusCircle size={60} color="#01a1fb" />
+          <Image src={Bina} alt="Logo" width={150} height={150} />
+        </div>
+        <button>
+          <Link href="/biografia"> Fazer Login</Link>
+        </button>
+      </div>
       <Menu />
     </header>
-  )
+  );
 }

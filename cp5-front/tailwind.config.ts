@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
+        'outfit': ['Outfit', 'sans-serif'],
         'bebes': ['Bebas Neue', 'sans-serif'],
         'afacada': ['Afacad Flux'],
       },

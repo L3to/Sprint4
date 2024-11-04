@@ -1,48 +1,78 @@
-import Link from "next/link";
-import Imagemdanasa from "./imagemdanasa/page";
 import Image from "next/image";
+import RowDash from "../assets/img/row-dashboard-image.jpeg";
+import Link from "next/link";
+import Computador from "../assets/img/row-image1.jpeg";
+import Mecanico from "../assets/img/row-image2.jpeg";
+import Oficina from "../assets/img/row-image3.jpeg";
 
 export default function Home() {
   return (
-    <div className="relative inline-block">
-      <div className="relative">
-        <Imagemdanasa data="2024-08-28" />
-        <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-rosa-claro text-center text-5xl md:text-8xl lg:text-9xl font-bold">
-          WORLDS IN <br /> COLLISION
-        </h1>
-      </div>
-      <div className="relative text-center p-6 mt-4 flex flex-col items-center">
-        <div className="w-4/5 sm:w-2/5 md:w-2/3 lg:w-1/2 h-1 bg-bege-claro" />
-        <h1 className="text-4xl md:text-4xl lg:text-6xl text-bege-claro relative z-10 font-light mt-4">
-          CONHEÇA O TRABALHO
-        </h1>
-        <blockquote className="max-w-2xl text-lg md:text-xl lg:text-2xl text-bege-claro relative z-10 mt-4 p-4 border-l-4 border-bege-escuro bg-bege-mais-claro italic mx-auto text-center font-thin">
-          &ldquo;Don&#39;t be afraid to face the facts, and never lose your
-          ability to ask the questions: Why? and How?&rdquo; <br />
-          <span className="block mt-2">― Immanuel Velikovsky</span>
-        </blockquote>
-        <div className="flex flex-row items-center justify-center mt-4 space-x-4 mx-auto">
+    <div>
+      <div className="flex w-full justify-center mt-5">
+        <div className="w-2/4 bg-[#01a1fb] rounded-2xl m-4">
+          <h1 className="text-white text-8xl p-7 mb-3">
+            Diagnóstico do seu veículo sem sair de casa
+          </h1>
+          <button>
+            <Link
+              className="text-3xl text-white px-10 py-2 border border-white rounded-3xl ml-8 hover:bg-blue-950 hover:text-white"
+              href="/biografia"
+            >
+              Faça já o orçamento
+            </Link>
+          </button>
+        </div>
+        <div className="flex items-center justify-center w-2/4 m-4">
           <Image
-            src="/img/Velikovsky.jpg"
-            alt="Imagem de Immanuel Velikovsky"
-            layout="responsive"
-            width={350}
-            height={50}
-            priority={true}
-            className="mt-4 rounded-lg shadow-lg"
+            src={RowDash}
+            alt="Mulher usando o computador"
+            className="rounded-2xl max-w-full h-auto"
           />
         </div>
-        <div className="w-4/5 sm:w-2/5 md:w-2/3 lg:w-1/2 h-1 bg-bege-claro mt-4" />
-        <div className="flex flex-row items-center justify-center mt-4 space-x-4 text-xl md:text-2xl lg:text-3xl">
-            <Link href="/worlds" className="bg-orange-800 hover:bg-orange-900 text-white py-2 px-4 rounded">
-            WORLDS IN COLLISION: O LIVRO
-            </Link>
-            <Link href="/biografia" className="bg-red-800 hover:bg-red-900 text-white py-2 px-3 rounded">
-            Saiba mais sobre Velikovsky
-            </Link>
-            <Link href="/catastrofe" className="bg-pink-800 hover:bg-pink-900 text-white py-2 px-3 rounded">
-            Cálculo da catástrofe
-            </Link>
+      </div>
+      <h1 className="text-3xl text-center">Conheça os nossos serviços</h1>
+      <div className="flex justify-center space-x-4 m-5">
+        <div className="w-1/3">
+          <div className="relative h-[300px]"> 
+            <Image
+              src={Computador}
+              alt="Usando computador"
+              className="rounded-2xl object-cover w-full h-full" 
+              width={300}
+              height={300}
+            />
+            <h2 className="absolute bottom-0 left-0 w-full text-center text-white p-3 bg-[#01a1fb] rounded-b-2xl text-2xl">
+              Diagnóstico online
+            </h2>
+          </div>
+        </div>
+        <div className="w-1/3">
+          <div className="relative h-[300px]">
+            <Image
+              src={Mecanico}
+              alt="Mecânico trabalhando"
+              className="rounded-2xl object-cover w-full h-full"
+              width={300}
+              height={300}
+            />
+            <h2 className="absolute bottom-0 left-0 w-full text-center text-white p-3 bg-[#01a1fb] rounded-b-2xl text-2xl">
+              Mecânico
+            </h2>
+          </div>
+        </div>
+        <div className="w-1/3">
+          <div className="relative h-[300px]">
+            <Image
+              src={Oficina}
+              alt="Centro automotivo"
+              className="rounded-2xl object-cover w-full h-full"
+              width={300}
+              height={300}
+            />
+            <h2 className="absolute bottom-0 left-0 w-full text-center text-white p-3 bg-[#01a1fb] rounded-b-2xl text-2xl">
+              Centro automotivo
+            </h2>
+          </div>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 
 @tailwind base;
 @tailwind components;
@@ -7,28 +7,42 @@
 
 @layer base {
     body {
-        @apply text-[16px] text-[#D9CEBAFF] font-bebes bg-slate-200;
+        @apply text-[`6px] font-outfit;
     }
 }
 
 @layer components {
+    .Logo{
+        @apply mr-2;
+    }
     .cabecalho {
-        @apply text-rosa-escuro pb-0 m-auto;
+        @apply mt-3;
     }
-
+    .cabecalho div{
+        @apply flex items-center;
+    }
+    .cabecalho button{
+        @apply text-3xl text-[#01a1fb] px-10 py-2 border border-[#01a1fb] rounded-3xl mr-4;
+    }
+    .cabecalho button:hover{
+        @apply bg-[#01a1fb] text-white;
+    }
     .cabecalho img {
-        @apply block mx-auto;
+        @apply block p-4;
     }
-
     .menu li {
-        @apply inline mx-2;
+        @apply flex gap-2 items-center mx-2;
     }
 
-    .menu a:hover {
-        @apply text-rosa-claro;
+    .menu li:hover {
+        @apply text-blue-400;
+    }
+
+    .menu ul {
+        @apply flex gap-10;
     }
 
     .menu {
-        @apply flex justify-center text-3xl text-center;
+        @apply text-3xl bg-[#F2F2F2] p-4;
     }
 }

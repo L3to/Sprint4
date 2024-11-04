@@ -1,20 +1,22 @@
-"use client";
-
 import Cabecalho from "@/components/Cabecalho/Cabecalho";
 import Rodape from "@/components/Rodape/Rodape";
 import "./globals.css";
-import { usePathname } from "next/navigation"; 
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "BINA",
+  description: "Website para diagnóstico de veículos",
+};
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  const pathname = usePathname(); 
 
   return (
     <html lang="pt-br">
       <body>
-        {(pathname === "/biografia" || pathname === "/catastrofe" || pathname === "/worlds")   && <Cabecalho />}
+        <Cabecalho />
         {children}
-        {(pathname === "/biografia" || pathname === "/catastrofe" || pathname === "/worlds" || pathname === "/") && <Rodape />}
+         <Rodape />
       </body>
     </html>
   );
