@@ -1,50 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    body {
-        @apply font-outfit;
-    }
+  body {
+    @apply font-outfit;
+  }
 }
 
 @layer components {
-    .Logo{
-        @apply mr-2;
+  .Logo {
+    @apply mr-2;
+  }
+  .cabecalho {
+    @apply mt-3;
+  }
+  .cabecalho div {
+    @apply flex items-center;
+  }
+  .cabecalho button {
+    @apply text-3xl text-[#01a1fb] px-10 py-2 border border-[#01a1fb] rounded-3xl mr-4;
+  }
+  .cabecalho button:hover {
+    @apply bg-[#01a1fb] text-white;
+  }
+  .cabecalho img {
+    @apply block p-4;
+  }
+  .menu li {
+    @apply flex gap-2 items-center mx-2;
+  }
+
+  .menu li:hover {
+    @apply text-blue-400;
+  }
+
+  .menu ul {
+    @apply flex gap-10;
+  }
+
+  .menu {
+    @apply text-3xl bg-[#F2F2F2] p-4;
+  }
+  @media (max-width: 768px) {
+    .Bina {
+      @apply invisible;
     }
-    .cabecalho {
-        @apply mt-3;
+    .Mais {
+      @apply invisible;
     }
-    .cabecalho div{
-        @apply flex items-center;
+    .cabecalho button {
+      @apply text-3xl px-5 py-2;
     }
-    .cabecalho button{
-        @apply text-3xl text-[#01a1fb] px-10 py-2 border border-[#01a1fb] rounded-3xl mr-4;
-    }
-    .cabecalho button:hover{
-        @apply bg-[#01a1fb] text-white;
+    .Logo {
+      @apply mr-1 hidden;
     }
     .cabecalho img {
-        @apply block p-4;
+      @apply block p-2;
+    }
+    .menu ul {
+      @apply flex-row gap-4 justify-between;
     }
     .menu li {
-        @apply flex gap-2 items-center mx-2;
+      @apply mx-2;
     }
-
-    .menu li:hover {
-        @apply text-blue-400;
-    }
-
-    .menu ul {
-        @apply flex gap-10;
-    }
-
     .menu {
-        @apply text-3xl bg-[#F2F2F2] p-4;
+      @apply text-xl p-2;
     }
+  }
 
-
+  @media (max-width: 625px) {
+    .menu li:not(.BtnHome) {
+      @apply invisible;
+    }
+    .BtnHome {
+        @apply text-3xl;
+    }
+    .cabecalho button {
+        @apply text-xl px-3 py-2;
+      }
+  }
 }

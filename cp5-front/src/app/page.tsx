@@ -9,13 +9,13 @@ export default function Home() {
   return (
     <div>
       <div className="flex w-full justify-center mt-5">
-        <div className="w-2/4 bg-[#01a1fb] rounded-2xl m-4">
+      <div className="w-2/4 bg-[#01a1fb] rounded-2xl m-4 flex flex-col justify-center">
           <h1 className="text-white text-8xl p-7 mb-3">
             Diagnóstico do seu veículo sem sair de casa
           </h1>
-          <button>
+          <button className="self-start ml-8">
             <Link
-              className="text-3xl text-white px-10 py-2 border border-white rounded-3xl ml-8 hover:bg-blue-950 hover:text-white"
+              className="text-3xl text-white px-10 py-2 border border-white rounded-3xl hover:bg-blue-950 hover:text-white"
               href="pages/orcamento"
             >
               Faça já o orçamento
@@ -39,8 +39,8 @@ export default function Home() {
                 src={Computador}
                 alt="Usando computador"
                 className="rounded-2xl object-cover w-full h-full"
-                width={300}
-                height={300}
+                width={600}
+                height={400}
               />
               <h2 className="absolute bottom-0 left-0 w-full text-center text-white p-3 bg-[#01a1fb] rounded-b-2xl text-2xl">
                 Conheça o nosso sistema
@@ -55,8 +55,8 @@ export default function Home() {
                 src={Mecanico}
                 alt="Mecânico trabalhando"
                 className="rounded-2xl object-cover w-full h-full"
-                width={300}
-                height={300}
+                width={600}
+                height={400}
               />
               <h2 className="absolute bottom-0 left-0 w-full text-center text-white p-3 bg-[#01a1fb] rounded-b-2xl text-2xl">
                 Mecânico Virtual
@@ -71,8 +71,8 @@ export default function Home() {
                 src={Oficina}
                 alt="Centro automotivo"
                 className="rounded-2xl object-cover w-full h-full"
-                width={300}
-                height={300}
+                width={600}
+                height={400}
               />
               <h2 className="absolute bottom-0 left-0 w-full text-center text-white p-3 bg-[#01a1fb] rounded-b-2xl text-2xl">
                 Centro automotivo
