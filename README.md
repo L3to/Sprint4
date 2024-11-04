@@ -11,10 +11,15 @@ Introduzimos o modelo de IA da nossa aplicação, o *Bina*, que futuramente perm
 ## Funcionalidades
 
 •⁠  ⁠(Futuro!) Análise de danos físicos do veículo com geração de orçamento.
+
 •⁠  ⁠(Futuro!) Acesso às oficinas e serviços da Porto Seguro.
+
 •⁠  ⁠Navegação otimizada e carregamento rápido com Next.js.
+
 •⁠  ⁠Página HOME visualmente atraente e responsiva.
+
 •⁠  ⁠Seção "Nossa Equipe" bem elaborada.
+
 •⁠  ⁠Páginas de Login e SignUp integradas com a API Java, sem uso de localStorage.
 
 ## Vantagens do Next.js
