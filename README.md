@@ -27,8 +27,11 @@ Introduzimos o modelo de IA da nossa aplicação, o *Bina*, que futuramente perm
 A adoção do Next.js trouxe várias melhorias ao nosso projeto:
 
 •⁠  ⁠*SSR e SSG*: O Next.js permite Renderização no Lado do Servidor (SSR) e Geração de Sites Estáticos (SSG), garantindo um carregamento mais rápido e uma melhor experiência de navegação.
+
 •⁠  ⁠*Rotas automáticas*: A estrutura de rotas é baseada em pastas, simplificando o gerenciamento e reduzindo a configuração.
+
 •⁠  ⁠*Melhor Experiência do Usuário*: As transições de páginas são mais rápidas, proporcionando uma navegação fluida.
+
 •⁠  ⁠*SEO otimizado*: A renderização do lado do servidor ajuda no SEO, uma vantagem importante para uma aplicação de serviços.
 
 ## Integração com API de Cadastro/Login
