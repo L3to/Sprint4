@@ -21,7 +21,7 @@ export default function Cabecalho() {
           <Image src={Bina} alt="Logo" width={150} height={150} />
         </div>
         <button>
-          <Link href="/biografia"> Fazer Login</Link>
+          <Link href="/pages/login"> Fazer Login</Link>
         </button>
       </div>
       <Menu />

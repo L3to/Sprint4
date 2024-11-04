@@ -1,45 +1,37 @@
 import React from "react";
 import Image from "next/image";
-import Alice from "@/assets/img/alice.jpg";
-import Luiz from "@/assets/img/luizc.png";
-import LuizK from "@/assets/img/luizk.jpg";
+import { teamMembers } from "@/data";
+import type { TeamMember } from "../../../types";
 
-export default function Biografia() {
-  return (
-    <div className="flex m-10">
-      <div>
-      <Image
-        src={Alice}
-        alt="Alice"
-        width={300}
-        height={300}
-        className="rounded-2xl"
-      />
-      <h1>Alice Teixeira</h1>
-      <p>RM556293</p>
-      </div>
-      <div>
-      <Image
-        src={Luiz}
-        alt="Luiz"
-        width={300}
-        height={300}
-        className="rounded-2xl"
-      />
-      <h1>Luiz Campos da Silva</h1>
-      <p>RM555591</p>
-      </div>
-      <div>
-      <Image
-        src={LuizK}
-        alt="Luiz K"
-        width={300}
-        height={300}
-        className="rounded-2xl"
-      />
-      <h1>Luiz Kamada</h1>
-      <p>RM557652</p>
-      </div>
+const Membros = ({
+  membro,
+  isReversed,
+}: {
+  membro: TeamMember;
+  isReversed: boolean;
+}) => (
+  <div className={`flex ${isReversed ? "flex-row-reverse" : ""}`}>
+    <Image
+      src={membro.img}
+      alt={membro.nome}
+      width={500}
+      height={500}
+      className="rounded-2xl"
+    />
+    <div className="m-10">
+      <h1 className="text-5xl">{membro.nome}</h1>
+      <p className="text-4xl">{membro.rm}</p>
+      <p className="text-4xl">{membro.classe}</p>
     </div>
-  )
+  </div>
+);
+
+export default function Equipe() {
+  return (
+    <div className="flex flex-col m-10">
+      {teamMembers.map((membro, index) => (
+        <Membros key={membro.rm} membro={membro} isReversed={index % 2 !== 0} />
+      ))}
+    </div>
+  );
 }
