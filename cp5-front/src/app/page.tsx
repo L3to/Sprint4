@@ -26,52 +26,58 @@ export default function Home() {
           <Image
             src={RowDash}
             alt="Mulher usando o computador"
-            className="rounded-2xl max-w-full h-auto"
+            className="rounded-2xl max-w-full h-auto6"
           />
         </div>
       </div>
       <h1 className="text-3xl text-center">Conheça os nossos serviços</h1>
       <div className="flex justify-center space-x-4 m-5">
         <div className="w-1/3">
-          <div className="relative h-[300px]"> 
-            <Image
-              src={Computador}
-              alt="Usando computador"
-              className="rounded-2xl object-cover w-full h-full" 
-              width={300}
-              height={300}
-            />
-            <h2 className="absolute bottom-0 left-0 w-full text-center text-white p-3 bg-[#01a1fb] rounded-b-2xl text-2xl">
-              Diagnóstico online
-            </h2>
+          <div className="relative h-[300px] hover:brightness-75">
+            <Link href="/pages/historia">
+              <Image
+                src={Computador}
+                alt="Usando computador"
+                className="rounded-2xl object-cover w-full h-full"
+                width={300}
+                height={300}
+              />
+              <h2 className="absolute bottom-0 left-0 w-full text-center text-white p-3 bg-[#01a1fb] rounded-b-2xl text-2xl">
+                Conheça o nosso sistema
+              </h2>
+            </Link>
           </div>
         </div>
         <div className="w-1/3">
-          <div className="relative h-[300px]">
-            <Image
-              src={Mecanico}
-              alt="Mecânico trabalhando"
-              className="rounded-2xl object-cover w-full h-full"
-              width={300}
-              height={300}
-            />
-            <h2 className="absolute bottom-0 left-0 w-full text-center text-white p-3 bg-[#01a1fb] rounded-b-2xl text-2xl">
-              Mecânico
-            </h2>
+          <div className="relative h-[300px] hover:brightness-75">
+            <Link href="/pages/mecanico">
+              <Image
+                src={Mecanico}
+                alt="Mecânico trabalhando"
+                className="rounded-2xl object-cover w-full h-full"
+                width={300}
+                height={300}
+              />
+              <h2 className="absolute bottom-0 left-0 w-full text-center text-white p-3 bg-[#01a1fb] rounded-b-2xl text-2xl">
+                Mecânico Virtual
+              </h2>
+            </Link>
           </div>
         </div>
         <div className="w-1/3">
-          <div className="relative h-[300px]">
-            <Image
-              src={Oficina}
-              alt="Centro automotivo"
-              className="rounded-2xl object-cover w-full h-full"
-              width={300}
-              height={300}
-            />
-            <h2 className="absolute bottom-0 left-0 w-full text-center text-white p-3 bg-[#01a1fb] rounded-b-2xl text-2xl">
-              Centro automotivo
-            </h2>
+          <div className="relative h-[300px] hover:brightness-75">
+            <Link href="/pages/oficina">
+              <Image
+                src={Oficina}
+                alt="Centro automotivo"
+                className="rounded-2xl object-cover w-full h-full"
+                width={300}
+                height={300}
+              />
+              <h2 className="absolute bottom-0 left-0 w-full text-center text-white p-3 bg-[#01a1fb] rounded-b-2xl text-2xl">
+                Centro automotivo
+              </h2>
+            </Link>
           </div>
         </div>
       </div>

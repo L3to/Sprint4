@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import BgLogin from "@/assets/img/BgLogin.jpeg"; // Import the background image
 
 export default function LoginPage() {
   const [email, setEmail] = useState('');
@@ -14,8 +15,16 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen" >1
-      <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
+    <div className="relative flex items-center justify-center min-h-screen">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${BgLogin.src})`,
+        }}
+      ></div>
+      <div className="absolute inset-0 bg-black opacity-50"></div> {/* Overlay for darkening */}
+
+      <div className="relative bg-white p-8 rounded shadow-md w-full max-w-md z-10">
         <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
