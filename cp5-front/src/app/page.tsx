@@ -16,7 +16,7 @@ export default function Home() {
           <button>
             <Link
               className="text-3xl text-white px-10 py-2 border border-white rounded-3xl ml-8 hover:bg-blue-950 hover:text-white"
-              href="/biografia"
+              href="pages/orcamento"
             >
               Faça já o orçamento
             </Link>
@@ -34,7 +34,7 @@ export default function Home() {
       <div className="flex justify-center space-x-4 m-5">
         <div className="w-1/3">
           <div className="relative h-[300px] hover:brightness-75">
-            <Link href="/pages/historia">
+            <Link href="/pages/funcionamento">
               <Image
                 src={Computador}
                 alt="Usando computador"
