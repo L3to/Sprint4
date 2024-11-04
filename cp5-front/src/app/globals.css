@@ -7,7 +7,7 @@
 
 @layer base {
     body {
-        @apply text-[16px] text-[#D9CEBAFF] font-bebes bg-[#311d22];
+        @apply text-[16px] text-[#D9CEBAFF] font-bebes bg-slate-200;
     }
 }
 
