@@ -4,7 +4,6 @@ import { useState } from 'react';
 import BgLogin from "@/assets/img/BgLogin.jpeg"; 
 
 export default function LoginPage() {
-  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [nome, setNome] = useState('');
   const [isRegistering, setIsRegistering] = useState(false);
@@ -13,7 +12,7 @@ export default function LoginPage() {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:8080/api/logins/' + email, {
+      const response = await fetch('http://localhost:8080/api/logins/' + nome, { // Alterado para usar nome
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -100,14 +99,14 @@ export default function LoginPage() {
             </div>
           )}
           <div className="mb-4">
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-              Email
+            <label htmlFor="nome" className="block text-sm font-medium text-gray-700"> {/* Alterado para Nome */}
+              Nome
             </label>
             <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              type="text" // Alterado para texto
+              id="nome" // Alterado para Nome
+              value={nome} // Alterado para Nome
+              onChange={(e) => setNome(e.target.value)} // Alterado para Nome
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               required
             />
