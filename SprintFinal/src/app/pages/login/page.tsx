@@ -55,7 +55,7 @@ export default function LoginPage() {
 
       if (response.ok) {
         const result = await response.json();
-        setMessage(result); // Exibe a mensagem de sucesso
+        setMessage(result);
       } else {
         const errorData = await response.json();
         setMessage(errorData.message || 'Erro ao cadastrar');
@@ -78,7 +78,7 @@ export default function LoginPage() {
           backgroundImage: `url(${BgLogin.src})`,
         }}
       ></div>
-      <div className="absolute inset-0 bg-black opacity-50"></div> {/* Overlay for darkening */}
+      <div className="absolute inset-0 bg-black opacity-50"></div>
 
       <div className="relative bg-white p-8 rounded shadow-md w-full max-w-md z-10">
         <h2 className="text-2xl font-bold mb-6 text-center">{isRegistering ? 'Cadastro' : 'Login'}</h2>
