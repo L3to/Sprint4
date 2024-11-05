@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation'; 
 import BgLogin from "@/assets/img/BgLogin.jpeg"; 
 
 export default function LoginPage() {
@@ -10,6 +11,7 @@ export default function LoginPage() {
   const [email, setEmail] = useState(''); 
   const [isRegistering, setIsRegistering] = useState(false);
   const [message, setMessage] = useState('');
+  const router = useRouter(); 
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -24,6 +26,7 @@ export default function LoginPage() {
       if (response.ok) {
         const data = await response.json();
         console.log('Login bem-sucedido:', data);
+        router.push('/'); 
       } else {
         const errorData = await response.json();
         setMessage(errorData.message || 'Erro ao fazer login');
@@ -60,20 +63,20 @@ export default function LoginPage() {
       if (response.ok) {
         const result = await response.json();
         setMessage(result);
-        setTimeout(() => setMessage(''), 3000); // Mensagem por 3 segundos
+        setTimeout(() => setMessage(''), 3000); 
       } else {
         const errorData = await response.json();
         setMessage(errorData.message || 'Erro ao cadastrar');
-        setTimeout(() => setMessage(''), 3000); // Mensagem por 3 segundos
+        setTimeout(() => setMessage(''), 3000);
       }
     } catch (error) {
       console.error('Erro ao realizar cadastro:', error);
       if (error instanceof Error && error.message === 'Failed to fetch') {
         setMessage('Servidor Tomcat está indisponível');
-        setTimeout(() => setMessage(''), 3000); // Mensagem por 3 segundos
+        setTimeout(() => setMessage(''), 3000); 
       } else {
         setMessage('Erro ao realizar cadastro');
-        setTimeout(() => setMessage(''), 3000); // Mensagem por 3 segundos
+        setTimeout(() => setMessage(''), 3000); 
       }
     }
   };
