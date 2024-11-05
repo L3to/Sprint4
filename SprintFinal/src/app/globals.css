@@ -5,6 +5,9 @@
 @tailwind utilities;
 
 @layer base {
+  html, body {
+    @apply overflow-x-hidden;
+  }
   body {
     @apply font-outfit;
   }
@@ -66,7 +69,7 @@
       @apply block p-2;
     }
     .menu ul {
-      @apply flex-row gap-4 justify-between;
+      @apply flex-row gap-2 justify-between;
     }
     .menu li {
       @apply mx-2;
@@ -84,7 +87,7 @@
         @apply text-3xl;
     }
     .cabecalho button {
-        @apply text-xl px-3 py-2;
+        @apply text-xl;
       }
   }
 }

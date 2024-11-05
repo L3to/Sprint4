@@ -20,7 +20,7 @@ const Membros = ({
       alt={membro.nome}
       width={500}
       height={500}
-      className="rounded-2xl sm:w-3/4 md:w-auto"
+      className="rounded-2xl w-full sm:w-3/4 md:w-auto"
     />
     <div className="m-4 md:m-10 text-center md:text-left">
       <h1 className="text-2xl md:text-5xl">{membro.nome}</h1>

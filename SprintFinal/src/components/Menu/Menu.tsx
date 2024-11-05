@@ -11,7 +11,7 @@ export default function Menu() {
     <nav className="menu">
         <ul>
             <li className="BtnHome"> <Link href="/">Home</Link> </li>
-            <li> <Link href="/pages/minhaequipe">Minha equipe</Link> </li>
+            <li> <Link href="/pages/minhaequipe">Nossa equipe</Link> </li>
             <li> <Link href="/pages/historico">Histórico</Link><BiAlarm/> </li>
             <li> <Link href="/pages/centrosautomotivos">Centros Automotivos</Link><BiCar/></li>
         </ul>

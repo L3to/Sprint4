@@ -59,7 +59,7 @@ export default function Funcionamento() {
       <section className="mb-10">
         <h2 className="text-2xl font-semibold mb-3">Acesso ao Cloud Shell</h2>
         <p className="mb-2">
-          O Cloud Shell é uma ferramenta que oferece acesso à linha de comando, permitindo que você interaja de forma eficiente com nossos recursos na nuvem. Para começar, basta clicar em "Ativar Cloud Shell" no seu painel de controle.
+          O Cloud Shell é uma ferramenta que oferece acesso à linha de comando, permitindo que você interaja de forma eficiente com nossos recursos na nuvem. Para começar, basta clicar em &quot;Ativar Cloud Shell&quot; no seu painel de controle.
         </p>
       </section>
 
