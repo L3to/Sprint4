@@ -1,6 +1,6 @@
 # Sprint 4
 
-Confira o vídeo do Projeto aqui: [Link para o Vídeo](https://youtu.be/j04An_uHJBY)
+Confira o vídeo do Projeto aqui: [Link para o Vídeo](https://youtu.be/KlXxKlkISzM)
 
 Confira o deploy do Projeto aqui: https://sprint4-eight.vercel.app/
 
