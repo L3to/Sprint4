@@ -44,7 +44,12 @@
   .menu {
     @apply text-3xl bg-[#F2F2F2] p-4;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 950px) {
+    .menu {
+      @apply text-2xl p-3;
+    }
+  }
+  @media (max-width: 785px) {
     .Bina {
       @apply invisible;
     }

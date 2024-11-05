@@ -39,7 +39,7 @@ export default function Funcionamento() {
         <p className="mb-2">
           O modelo fornece uma previsão com a parte do veículo identificada e um percentual de confiança. A saída do sistema é clara e compreensível, permitindo que você saiba exatamente o que foi detectado. Um exemplo de resposta pode ser:
         </p>
-        <pre className="bg-gray-200 p-3 rounded mb-2">
+        <pre className="bg-gray-200 p-3 rounded mb-2 overflow-auto break-all">
           {`{
   "predictions": [
     {
